@@ -1,0 +1,205 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9be890; /*  */
+    display: flex; /*  */
+    flex-direction: column; /*  */
+    min-height: 100vh; /* */
+    background-color: #9be890;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Un poco más oscuro al pasar el mouse */
+}
+
+   
+#map {
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* Ancho del mapa */
+    max-width: 600px; /* Ancho máximo */
+    margin: auto; /* Centrar el mapa */
+}
+
+
+header {
+    background: #415e3e; /* */
+    color: white; /* */
+    padding: 20px 0;
+    text-align: center; /* */
+    display: flex;
+    flex-direction: column; /* */
+    align-items: center; /*  */
+}
+
+nav ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
+}
+
+nav ul li {
+    display: inline; /* Mostrar en línea */
+    margin-right: 20px; /* Espaciado entre elementos */
+}
+
+nav ul li a {
+    text-decoration: none; /* Sin subrayado */
+    color: #000; /* Color del texto */
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+nav ul li a.active {
+    background-color: #007BFF; /* Color de fondo para el elemento activo */
+    color: white; /* Color del texto para el elemento activo */
+    font-weight: bold; /* Hacer el texto más destacado */
+}
+
+
+main {
+    padding: 20px;
+    flex: 1; /*  */
+}
+
+/* Estilos del footer */
+footer {
+    position: relative; /*  */
+    background-color: #415e3e; /*  */
+    color: rgb(255, 255, 255); /* */
+    padding: 20px; /*  */
+    text-align: center; /* */
+    margin-top: auto; /*  */
+}
+.footer-container {
+    max-width: 1200px; /*  */
+    margin: 0 auto; /*  */
+}
+
+
+.logo {
+    opacity: 0; /*  */
+    transition: opacity 1s ease; /*  */
+}
+
+/* Clase para hacer que el logo aparezca */
+.logo-visible {
+    opacity: 1; /*  */
+}
+.logo-container {
+    display: flex; /* */
+    justify-content: center; /*  */
+    align-items: center; /*  */
+}
+
+
+
+
+
+/* Estilos para la galería */
+/* Otras reglas de CSS que ya tienes... */
+
+/* Estilo para el contenedor de la galería */
+#galeria-container {
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a la línea */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: flex-start; /* Alinea las imágenes en la parte superior */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para cada imagen en la galería */
+.imagen-galeria {
+    text-align: center; /* Centra el texto debajo de las imágenes */
+}
+
+/* Estilo para la etiqueta <img> en la galería */
+.img-galeria {
+    width: 200px; /* Ancho de las imágenes */
+    height: 200px; /* Alto de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se mantengan con el mismo aspecto */
+    border: 1px solid #ccc; /* Borde gris alrededor de las imágenes */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover para imágenes */
+.img-galeria:hover {
+    transform: scale(1.05); /* Agrandar la imagen al pasar el mouse */
+}
+
+.redes-sociales {
+    display: flex; /*  */
+    justify-content: center; /*  */
+}
+
+.redes-sociales img {
+    width: 30px; /*  */
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.1); /* */
+}
+
+/* Estilo para las secciones de noticias */
+.noticia-titulo {
+    cursor: pointer;
+    color: #007BFF; /* Color azul para los títulos */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.noticia-contenido {
+    display: none; /* Inicialmente ocultamos el contenido */
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border: 1px solid #ccc; /* Bordes sutiles */
+    border-radius: 5px; /* Bordes redondeados */
+}
+a {
+    color: blue; /* Cambia el color del enlace */
+    text-decoration: underline; /* Subraya el enlace */
+}
+
+a:hover {
+    color: darkblue; /* Cambia el color cuando el mouse está sobre el enlace */
+}
+.highlight {
+    font-weight: bold; /* Hacer el texto en negrita */
+    color: yellow;     /* Cambiar el color del texto a amarillo */
+}

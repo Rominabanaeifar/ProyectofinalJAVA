@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body style="background-color: #9be890;">
+    <header>
+        <img src="../images/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Solicitud de Presupuesto</h1>
+        <form id="presupuesto-form">
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required maxlength="15" pattern="[A-Za-z]+" title="Solo letras, máximo 15 caracteres">
+                
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required maxlength="40" pattern="[A-Za-z ]+" title="Solo letras, máximo 40 caracteres">
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required maxlength="9" pattern="\d{9}" title="Solo números, máximo 9 dígitos">
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Presupuesto</legend>
+                <label for="producto">Producto:</label>
+                <select id="producto" required>
+                    <option value="" disabled selected>Selecciona un producto</option>
+                    <option value="producto1" data-precio="100">Escalador de dientes - $100</option>
+                    <option value="producto2" data-precio="150">Instrumentos de exploración - $150</option>
+                    <option value="producto3" data-precio="200">Fresas odontológicas - $200</option>
+                </select>
+            
+                <label for="plazo">Plazo (días):</label>
+                <input type="number" id="plazo" min="1" value="1" required>
+                <button type="button" id="añadir-producto">Añadir</button> <!-- Botón Añadir -->
+            
+                <fieldset>
+                    <legend>Extras</legend>
+                    <label><input type="checkbox" class="extra" value="20"> Extra 1 (+$20)</label>
+                    <label><input type="checkbox" class="extra" value="30"> Extra 2 (+$30)</label>
+                    <label><input type="checkbox" class="extra" value="50"> Extra 3 (+$50)</label>
+                </fieldset>
+                <h2>Productos Seleccionados</h2>
+                <div id="presupuesto-container"></div>
+                <p id="presupuesto-final">Presupuesto Total: $0</p>
+                <label>
+                    <input type="checkbox" id="aceptar" required>
+                    Acepto las condiciones de privacidad.
+                </label>
+                <button id="btn-enviar-presupuesto">Enviar Presupuesto</button>
+
+                <button type="reset" id="resetear-presupuesto">Resetear</button>
+                
+            </fieldset>
+            
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Instrumentos Odontológicos. Todos los derechos reservados.</p>
+        <p id="direccion-empresa"> Dirección : Avenida Reina, Valencia, España</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+    
+
+</body>
+</html>

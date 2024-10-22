@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rominaodonto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body style="background-color: #9be890;">
+    <header>
+        <img src="../images/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galería de Instrumentos</h1>
+
+        <form id="galeria-form">
+            <label for="producto">Selecciona un producto:</label>
+            <select id="producto" required>
+                <option value="" disabled selected>Selecciona un producto</option>
+                <option value="producto1" data-precio="100" data-imagen="../images/instrument1.jpg">Escalador de dientes - $100</option>
+                <option value="producto2" data-precio="150" data-imagen="../images/instrument2.jpg">Instrumentos de exploración - $150</option>
+                <option value="producto3" data-precio="200" data-imagen="../images/instrument3.jpg">Fresas odontológicas - $200</option>
+            </select>
+
+            <p id="total-galeria">Total: $0</p>
+            <button type="submit">Agregar a Presupuesto</button>
+        </form>
+
+        <div id="producto-seleccionado" class="producto-seleccionado" style="display: none; margin-top: 20px;">
+            <img id="imagen-producto" src="" alt="Producto Seleccionado" style="width: 200px; height: 200px;">
+            <p id="nombre-producto"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Instrumentos Odontológicos. Todos los derechos reservados.</p>
+        <p id="direccion-empresa"> Dirección : Avenida Reina, Valencia, España</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
